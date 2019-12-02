@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background: #01080e;
+    background: linear-gradient(to right,rgb(218, 225, 228),rgb(16, 159, 221));
     box-sizing: border-box;
 }
 
@@ -102,4 +102,38 @@ input[type="submit"]:hover{
     color: #fff;
     background:rgba(0,136, 196, 0.8); 
 }
+label[for = "register"]{
+    color: rgb(68, 68, 68);
+    text-transform: capitalize;
+    font-size: 100;
+}
+form > a{
+    color: rgb(100, 164, 248);
+    text-transform: uppercase;
+}
+form > a:hover{
+cursor: pointer;
+color: rgb(55, 68, 247);
 
+}
+
+.register-left{
+    text-align: center;
+    color: rgb(109, 3, 68);
+    padding: 30px;
+}
+
+.register-left{
+    padding: 20px 20px 0;
+}
+
+.register-left .btn-primary{
+    width: 120px;
+    border : none;
+    background: #fff;
+    border-radius: 1.5em;
+    color: #555;
+}
+.register-left .btn-primary:hover{
+    background: #0088e9;
+}
