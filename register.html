@@ -7,14 +7,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="app.css">
-    <title>Hello, world!</title>
+    <title>Register</title>
+    <!-- validate -->
+    <script src="validate.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="logo.svg" alt="logo">
+        <i class="fa fa-superpowers" aria-hidden="true"></i>
         <nav>
             <ul class="nav_links">
                 <li><a href="#">HOME</a> </li>
@@ -23,20 +27,42 @@
     
             </ul>
         </nav>
-        <button>SIGN UP</button>
+        <a href="sign.html">SIGN UP</a>
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 offset=md-1">
-                <div class="col-md-5 register-left">
-                    <h3>Let's do this together!</h3>
-                    <p>this is the place you can make your dreams true.
-                        You have te power to be consistent and be focus to your goal.
-                        Keep doing and keep getting better at it.
-                        First Attempt would be awful, you just do it</p>
-                        <a href="#" class="btn btn-primary">About Us</a>
-                </div>
-                <div class="col-md-7 register-right>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-5 register-left">
+                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                        <h3>Let's do this together!</h3>
+                        <p>this is the place you can make your dreams true.
+                            You have te power to be consistent and be focus to your goal.
+                            Keep doing and keep getting better at it.
+                            First Attempt would be awful, you just do it</p>
+                         <a href="#" class="btn btn-primary">About Us</a>
+                    </div>
+                    <div class="col-md-7 register-right">
+                        <h2>Register Here to Stay Motivated!</h2>
+                        <div class="register-form">
+                               <div class="form-group">
+                                   <input type="text" name="" id="name" class="form-control" placeholder="Name">
+                                </div> 
+                                <div class="form-group">
+                                    <input type="text" name="" id="Username" class="form-control" placeholder="Username">
+                                </div>                                
+                                <div class="form-group">
+                                    <input type="email" name="" id="email" class="form-control" placeholder="Email">
+                                </div>                               
+                                <div class="form-group">
+                                    <input type="password" name="" id="paasword" class="form-control" placeholder="password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="" id="confirm-password" class="form-control" placeholder="confirm password">
+                                </div>
+                                <div class="f"></div>
+                                <input  type="submit" action="success.html" value="Register">
+                    </div>
                 </div>
             </div>
         </div>
