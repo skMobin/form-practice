@@ -12,8 +12,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="app.css">
     <title>Register</title>
-    <!-- validate -->
-    <script type="text/javascript" src="validate.js"></script>
 </head>
 
 <body>
@@ -44,13 +42,13 @@
                     </div>
                     <div class="col-md-7 register-right">
                         <h2>Register Here to Stay Motivated!</h2>
-                        <form onclick="return validate()" class="register-form" action="success.html">
+                        <form class="register-form" onsubmit="return validate();" action="success.html">
                                <div class="form-group">
                                    <input type="text" id="name" class="form-control" placeholder="Name">
                                     <p id="inc-name"></p>
                                 </div> 
                                 <div class="form-group">
-                                    <input type="text"  id="Username" class="form-control" placeholder="Username">
+                                    <input type="text"  id="username" class="form-control" placeholder="Username">
                                     <p id="inc-username"></p>
                                 </div>                                
                                 <div class="form-group">
@@ -58,15 +56,15 @@
                                     <p id="inc-email"></p>
                                 </div>                               
                                 <div class="form-group">
-                                    <input type="password"  id="paasword" class="form-control" placeholder="password">
+                                    <input type="password"  id="pass" class="form-control" placeholder="password">
                                     <p id="inc-pass"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password"  id="confirm-password" class="form-control" placeholder="confirm password">
+                                    <input type="password"  id="con-pass" class="form-control" placeholder="confirm password">
                                     <p id="inc-cpass"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" value="Register">
+                                    <input type="submit" id="submit" value="Register">
                                 </div>
                                 
                         </form>
@@ -75,6 +73,9 @@
         </div>
     </div>
     </div>
+    <!-- validate -->
+    <script text="text/javascript" src="validate.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
